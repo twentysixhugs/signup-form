@@ -5,6 +5,9 @@
     src: url("./assets/Norse-Bold.otf");
 }
 
+body, html {
+    height: 100vh;
+}
 
 /* || UTILITIES */
 
@@ -53,3 +56,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* || SITEWIDE */
+
+/* || HERO IMAGE */
+
+.hero_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+/* || FORM */
