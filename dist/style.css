@@ -11,6 +11,14 @@ body, html {
 
 /* || UTILITIES */
 
+:root {
+    --lightgray: #E5E7EB;
+    --whitesmoke: rgb(245, 245, 245);
+    --input-warning-color: rgb(133, 45, 45);
+    --grass-green: #596D48;
+    --focus-blue: rgb(27, 67, 160);
+}
+
 /* Reset */
 
 html, body, div, span, applet, object, iframe,
