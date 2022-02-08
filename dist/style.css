@@ -115,8 +115,6 @@ body, html {
 }
 
 .form-wrapper {
-    min-width: 600px;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
