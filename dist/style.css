@@ -115,6 +115,7 @@ body, html {
 }
 
 .form-wrapper {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -124,6 +125,7 @@ body, html {
 
 .wrapper--description {
     flex-direction: column;
+    gap: 20px;
 }
 
 @media only screen and (max-width: 600px) {
