@@ -12,11 +12,14 @@ body, html {
 /* || UTILITIES */
 
 :root {
-    --lightgray: #E5E7EB;
+    --input-border: 3px solid #E5E7EB;
+    --input-focus-border: 3px solid rgb(27, 67, 160);
+
+    --input-warning:rgb(133, 45, 45);
+    --main-background: #f9fafb;
+
     --whitesmoke: rgb(245, 245, 245);
-    --input-warning-color: rgb(133, 45, 45);
     --grass-green: #596D48;
-    --focus-blue: rgb(27, 67, 160);
 }
 
 /* Reset */
@@ -65,8 +68,6 @@ table {
 	border-spacing: 0;
 }
 
-/* || SITEWIDE */
-
 /* || HERO IMAGE */
 
 .hero {
@@ -88,5 +89,5 @@ table {
     height: 100vh;
     width: max(300px, 74%);
 
-    background: grey;
+    background: var(--lightgray);
 }
