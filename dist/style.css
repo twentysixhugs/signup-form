@@ -1,27 +1,3 @@
-/* || GENERAL STYLES */
-
-@font-face {
-    font-family: "Norse-Bold";
-    src: url("./assets/Norse-Bold.otf");
-}
-
-body, html {
-    height: 100vh;
-}
-
-/* || UTILITIES */
-
-:root {
-    --input-border: 3px solid #E5E7EB;
-    --input-focus-border: 3px solid rgb(27, 67, 160);
-
-    --input-warning:rgb(133, 45, 45);
-    --main-background: #f9fafb;
-
-    --whitesmoke: rgb(245, 245, 245);
-    --grass-green: #596D48;
-}
-
 /* Reset */
 
 html, body, div, span, applet, object, iframe,
@@ -68,26 +44,86 @@ table {
 	border-spacing: 0;
 }
 
-/* || HERO IMAGE */
+
+
+
+/* || General */
+
+body, html {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    gap: 8px;
+}
+
+
+/* || Utils */
+
+:root {
+    --input-border: 3px solid #E5E7EB;
+    --input-focus-border: 3px solid rgb(27, 67, 160);
+
+    --input-warning:rgb(133, 45, 45);
+
+    --whitesmoke: rgb(245, 245, 245);
+    --grass-green: #596D48;
+
+    --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("./assets/Norse-Bold.otf");
+}
+
+
+/* || Typography */
+
+:root {
+    font-family: Roboto, var(--system-font);
+}
+
+.wrapper--description {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.text--italic {
+    font-style: italic;
+}
+
+
+/* || Hero image */
 
 .hero {
-    position: fixed;
-    left: 0;
-
     height: 100vh;
-    width: 26vw;
+    width: 36vw;
 
     background: url("./assets/background.jpg");
 }
 
-/* || MAIN */
+
+/* || Main */
 
 .main {
-    position: fixed;
-    right: 0;
+    display: flex;
+    flex-direction: row;
+}
 
-    height: 100vh;
-    width: max(300px, 74%);
+.form-wrapper {
+    min-width: 600px;
 
-    background: var(--lightgray);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #f9fafb;
+}
+
+.wrapper--description {
+    flex-direction: column;
 }
