@@ -86,13 +86,13 @@ body, html {
     font-family: Roboto, var(--system-font);
 }
 
-.wrapper--description {
+.description_para {
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
 }
 
-.text--italic {
+.para--italic {
     font-style: italic;
 }
 
@@ -123,7 +123,8 @@ body, html {
     background: #f9fafb;
 }
 
-.wrapper--description {
+.description {
+    display: flex;
     flex-direction: column;
     gap: 20px;
 }
