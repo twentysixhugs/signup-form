@@ -104,7 +104,7 @@ body, html {
 
 .para,
 .c-cta__heading {
-    font-size: calc(1rem + 6px);
+    font-size: calc(1rem + 4px);
     font-weight: 500;
     line-height: 26px;
 }
@@ -120,6 +120,15 @@ body, html {
     color: #414141;
 }
 
+.c-cta__login-prompt--link {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--grass-green);
+}
+
+.c-cta__login-prompt--link:hover {
+    color: var(--grass-green-dark);
+}
 /* || Hero image */
 
 .hero {
