@@ -53,6 +53,7 @@ body, html {
     height: 100vh;
     box-sizing: border-box;
     font-size: 16px;
+    background: #f9fafb;
 }
 
 .wrapper {
@@ -67,7 +68,6 @@ body, html {
 .main {
     display: flex;
     flex-direction: row;
-    background: #f9fafb;
 }
 
 
@@ -87,6 +87,7 @@ body, html {
 
     --whitesmoke: rgb(245, 245, 245);
     --grass-green: #596D48;
+    --grass-green-dark: #4c5c3e;
 }
 
 @font-face {
@@ -220,11 +221,20 @@ body, html {
     width: 280px;
     height: 50px;
 
+    font-size: calc(1rem + 2px);
+    font-weight: bold;
+
     background: var(--grass-green);
     color: #fff;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
-
+.l-cta__submit-btn:hover {
+    background: var(--grass-green-dark);
+}
 
 @media only screen and (max-width: 1250px) {
     .hero {
@@ -304,6 +314,21 @@ body, html {
         width: min(60vw, 220px);
         height: 27px;
     }
+
+    .l-cta__submit-btn {
+        align-self: center;
+        width: 280px;
+        height: 50px;
+    
+        font-size: calc(1rem + 2px);
+        font-weight: bold;
+    
+        background: var(--grass-green);
+        color: #fff;
+        border-radius: 8px;
+    }
+
+
 }
 
 @media only screen and (max-height: 700px) {
