@@ -136,13 +136,6 @@ body, html {
     }
 }
 
-/* @media only screen and (max-height: 520px) {
-    .hero {
-        height: 0;
-        width: 0;
-    }
-} */
-
 
 /* || Cta */
 
@@ -255,16 +248,6 @@ body, html {
     
     }
 
-/*     .l-fieldsets {
-        grid-template-columns: repeat(1, 220px);
-        grid-template-rows: repeat(3, 27px);
-    
-        column-gap: 110px;
-        row-gap: 30px;
-
-        margin: auto;
-    } */
-
     .l-fieldsets {
         display: flex;
         flex-direction: column;
@@ -304,15 +287,6 @@ body, html {
         padding-bottom: 0;
 
     }
-
-/*    .l-fieldsets {
-        grid-template-columns: repeat(1, min(60vw, 220px));
-        grid-template-rows: repeat(3, 27px);
-    
-        column-gap: 110px;
-        row-gap: 50px;
-        margin: auto;
-    } */
 
     .l-fieldsets {
         display: flex;
