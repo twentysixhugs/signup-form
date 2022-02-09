@@ -52,12 +52,25 @@ table {
 body, html {
     height: 100vh;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 .wrapper {
     display: flex;
     gap: 8px;
 }
+
+.l-grid {
+    display: grid;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+   /*  background: #f9fafb; */
+    background: #566a7e;
+}
+
 
 
 /* || Utils */
@@ -89,8 +102,9 @@ body, html {
     font-family: Roboto, var(--system-font);
 }
 
-.description_para {
-    font-size: 20px;
+.l-cta__para,
+.l-cta__heading {
+    font-size: calc(1rem + 6px);
     font-weight: 500;
     line-height: 26px;
 }
@@ -109,33 +123,68 @@ body, html {
     background: url("./assets/background.jpg");
 }
 
-
-/* || Main */
-
-.main {
-    display: flex;
-    flex-direction: row;
-    background: #f9fafb;
+@media only screen and (max-width: 700px) {
+    .hero {
+        display: none;
+    }
 }
 
-.l-signup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.l-signup__description {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    padding: var(--base-padding);
-}
-
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-height: 520px) {
     .hero {
         height: 0;
         width: 0;
     }
+} */
+
+
+/* || Cta */
+
+.l-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    padding: 0 var(--base-padding);
+}
+
+.l-cta__description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.l-cta__signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    padding: var(--base-padding);
+
+    background: gray;
+}
+
+.l-cta__heading {
+    margin: 1rem 0;
+}
+
+.l-grid--fieldsets {
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: repeat(3, 27px);
+
+    column-gap: 110px;
+    row-gap: 50px;
+}
+
+.l-cta__fieldset {
+    display: flex;
+    gap: 3rem;
+}
+
+.l-cta__input {
+    width: 280px;
+    height: 27px;
 }
