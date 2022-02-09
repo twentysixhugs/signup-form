@@ -188,3 +188,52 @@ body, html {
     width: 280px;
     height: 27px;
 }
+
+@media only screen and (max-width: 1250px) {
+    .l-grid--fieldsets {
+        grid-template-columns: repeat(1, 280px);
+        grid-template-rows: repeat(3, 27px);
+    
+        column-gap: 110px;
+        row-gap: 50px;
+
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .l-cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    .l-cta__signup {
+        width: 100%;
+        padding: calc(var(--base-padding)-20px);
+        padding-bottom: calc(var(--base-padding) + 10px);
+
+    }
+
+    .l-grid--fieldsets {
+        /* grid-template-columns: repeat(1, 220px); */
+        grid-template-columns: repeat(1, min(60vw, 220px));
+        grid-template-rows: repeat(3, 27px);
+    
+        column-gap: 110px;
+        row-gap: 50px;
+        margin: auto;
+    }
+
+    .l-cta__input {
+        /* width: 220px; */
+        width: min(60vw, 220px);
+        height: 27px;
+    }
+}
