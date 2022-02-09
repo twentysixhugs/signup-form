@@ -181,12 +181,14 @@ body, html {
 
 .l-cta__fieldset {
     display: flex;
-    gap: 3rem;
+    flex-direction: column;
 }
 
 .l-cta__input {
     width: 280px;
-    height: 27px;
+
+    min-height: 27px;
+    max-height: 27px;
 }
 
 @media only screen and (max-width: 1250px) {
