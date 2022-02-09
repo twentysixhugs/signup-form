@@ -170,6 +170,8 @@ body, html {
 .l-cta__signup-content {
     background: #ffffff;
     padding: var(--base-padding);
+
+    box-shadow: 5px -1px 4px #eeeeee, 5px 4px 6px #afafaf;
 }
 
 .l-cta__heading {
