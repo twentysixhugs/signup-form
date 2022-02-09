@@ -189,7 +189,8 @@ body, html {
     margin-bottom: 2rem;
 }
 
-.l-grid--fieldsets {
+.l-fieldsets {
+    display: grid;
     grid-template-columns: repeat(2, 280px);
     grid-template-rows: repeat(3, 27px);
 
@@ -238,7 +239,7 @@ body, html {
 
 @media only screen and (max-width: 1250px) {
     .hero {
-        height: 130vh;
+        height: 150vh;
         width: 36vw;
     
         background: url("./assets/background.jpg");
@@ -254,7 +255,7 @@ body, html {
     
     }
 
-    .l-grid--fieldsets {
+/*     .l-fieldsets {
         grid-template-columns: repeat(1, 220px);
         grid-template-rows: repeat(3, 27px);
     
@@ -262,6 +263,11 @@ body, html {
         row-gap: 30px;
 
         margin: auto;
+    } */
+
+    .l-fieldsets {
+        display: flex;
+        flex-direction: column;
     }
 
     .l-block--signup {
@@ -299,14 +305,20 @@ body, html {
 
     }
 
-    .l-grid--fieldsets {
-        /* grid-template-columns: repeat(1, 220px); */
+/*    .l-fieldsets {
         grid-template-columns: repeat(1, min(60vw, 220px));
         grid-template-rows: repeat(3, 27px);
     
         column-gap: 110px;
         row-gap: 50px;
         margin: auto;
+    } */
+
+    .l-fieldsets {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-bottom: 0;
     }
 
     .c-fieldset__input {
