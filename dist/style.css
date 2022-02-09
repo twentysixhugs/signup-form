@@ -102,8 +102,8 @@ body, html {
     font-family: Roboto, var(--system-font);
 }
 
-.l-cta__para,
-.l-cta__heading {
+.para,
+.c-cta__heading {
     font-size: calc(1rem + 6px);
     font-weight: 500;
     line-height: 26px;
@@ -113,7 +113,7 @@ body, html {
     font-style: italic;
 }
 
-.fieldset__label {
+.c-fieldset__label {
     text-transform: uppercase;
     letter-spacing: 2.432px;
     font-size: calc(1rem - 3px);
@@ -146,7 +146,7 @@ body, html {
 
 /* || Cta */
 
-.l-cta {
+.c-cta {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,7 +158,7 @@ body, html {
     /* padding: 0 var(--base-padding); */
 }
 
-.l-cta__description {
+.c-cta__description {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -167,7 +167,7 @@ body, html {
 
 }
 
-.l-cta__signup {
+.c-cta__signup {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,14 +178,14 @@ body, html {
     /* padding: var(--base-padding); */
 }
 
-.l-cta__signup-content {
+.l-block--signup {
     background: #ffffff;
     padding: var(--base-padding);
 
     box-shadow: 5px -1px 4px #eeeeee, 5px 4px 6px #dadada;
 }
 
-.l-cta__heading {
+.c-cta__heading {
     margin-bottom: 2rem;
 }
 
@@ -199,13 +199,13 @@ body, html {
     margin-bottom: 20px;
 }
 
-.l-cta__fieldset {
+.c-fieldset {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
-.l-cta__input {
+.c-fieldset__input {
     width: 280px;
 
     min-height: 27px;
@@ -215,7 +215,7 @@ body, html {
     border-radius: 4px;
 }
 
-.l-cta__submit-btn {
+.c-btn {
     margin-top: 40px;
     margin: 40px;
     width: 280px;
@@ -232,7 +232,7 @@ body, html {
     transition: all 0.2s;
 }
 
-.l-cta__submit-btn:hover {
+.c-btn:hover {
     background: var(--grass-green-dark);
 }
 
@@ -245,7 +245,7 @@ body, html {
         background-attachment: fixed;
     }
 
-    .l-cta__description {
+    .c-cta__description {
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -264,13 +264,13 @@ body, html {
         margin: auto;
     }
 
-    .l-cta__signup-content {
+    .l-block--signup {
         padding: calc(var(--base-padding) / 2);
     }
 }
 
 @media only screen and (max-width: 750px) {
-    .l-cta__description {
+    .c-cta__description {
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -279,7 +279,7 @@ body, html {
     
     }
 
-    .l-cta {
+    .c-cta {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -292,7 +292,7 @@ body, html {
     }
 
 
-    .l-cta__signup {
+    .c-cta__signup {
         width: 100%;
         padding: calc(var(--base-padding)-20px);
         padding-bottom: 0;
@@ -309,13 +309,13 @@ body, html {
         margin: auto;
     }
 
-    .l-cta__input {
+    .c-fieldset__input {
         /* width: 220px; */
         width: min(60vw, 220px);
         height: 27px;
     }
 
-    .l-cta__submit-btn {
+    .c-btn {
         align-self: center;
         width: 280px;
         height: 50px;
