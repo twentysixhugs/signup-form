@@ -81,9 +81,9 @@ body, html {
 
 
     --input-border: 1px solid #E5E7EB;
-    --input-focus-border: 3px solid rgb(27, 67, 160);
+    --input-focus-border: 2px solid rgb(28, 72, 173);
 
-    --input-warning:rgb(133, 45, 45);
+    --input-warning:rgb(170, 29, 29);
 
     --whitesmoke: rgb(245, 245, 245);
     --grass-green: #596D48;
@@ -216,6 +216,12 @@ body, html {
     border: var(--input-border);
     border-radius: 4px;
 }
+
+.c-fieldset__input:focus {
+    outline: none;
+    border: var(--input-focus-border);
+}
+
 
 .c-btn {
     margin-top: 40px;
