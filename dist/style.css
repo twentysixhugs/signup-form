@@ -118,14 +118,14 @@ body, html {
     background: #f9fafb;
 }
 
-.l-form {
+.l-signup {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.l-form__description {
+.l-signup__description {
     display: flex;
     flex-direction: column;
     gap: 20px;
