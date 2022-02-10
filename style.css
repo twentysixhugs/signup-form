@@ -54,6 +54,7 @@ body, html {
     box-sizing: border-box;
     font-size: 16px;
     background: #f9fafb;
+    
 }
 
 .wrapper {
@@ -129,14 +130,42 @@ body, html {
 .c-cta__login-prompt--link:hover {
     color: var(--grass-green-dark);
 }
+
+.hero__title {
+    color: var(--whitesmoke);
+
+    font-family: "Norse-Bold", var(--system-font);
+    font-size: max(3rem, 7vw);
+}
+
 /* || Hero image */
 
 .hero {
+    position: relative;
+
     height: 100vh;
     width: 36vw;
 
     background: url("./assets/background.jpg");
     background-attachment: fixed;
+}
+
+.hero__logo {
+    position: absolute;
+    top: 180px;
+
+    width: 100%;
+    height: 170px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero__img {
+    width: 7vw;
 }
 
 @media only screen and (max-width: 700px) {
@@ -162,7 +191,7 @@ body, html {
 .c-cta__description {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
     padding: 0 var(--base-padding);
     margin: 100px 0 30px 0;
 
